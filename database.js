@@ -353,12 +353,6 @@
   });
 
   /* ================= start ================= */
-  /* The scanner lives at its own address once the two are split. */
-  (function linkToScanner(){
-    var a = document.querySelector("a.bigLink");
-    if(a) a.setAttribute("href", PDZ.appUrl("scanner"));
-  })();
-
   render();
 
   Store.open().then(function(res){
